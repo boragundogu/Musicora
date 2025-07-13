@@ -1,0 +1,18 @@
+line_length:
+  
+  warning: 170
+  ignores_comments: true
+
+file_length:
+    warning: 800
+
+nesting:
+  type_level: 2
+  function_level: 2
+
+disabled_rules:
+  - type_name
+  - trailing_whitespace
+
+excluded:
+  - Pods

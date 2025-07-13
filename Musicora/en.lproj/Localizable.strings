@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Musicora
+
+  Created by Bora Gündoğu on 9.07.2025.
+  
+*/
+
+
+"profile_page_title" = "Profile";
+"edit_button_title" = "Edit";
+"language_button_title" = "Language";
+"camera_permission_title" = "Camera Access Required";
+"camera_permission_message" = "We need access to your camera to take a profile photo. Please enable it in Settings.";
+"photolibrary_permission_title" = "Photo Library Access Required";
+"photolibrary_permission_message" = "We need access to your photos to select a profile photo. Please enable it in Settings.";
+"settings_button_title" = "Settings";
+"cancel_button_title" = "Cancel";
+"change_password" = "Change Password";
+"logout" = "Logout";

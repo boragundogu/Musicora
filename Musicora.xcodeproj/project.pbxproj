@@ -6,25 +6,109 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0970D2542D9EA68D00148C6A /* autumunoc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0970D2532D9EA68D00148C6A /* autumunoc.mp3 */; };
+		098A60822D8355C6000456F4 /* Pods_Musicora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7292C42463DD4A234FFFC1C9 /* Pods_Musicora.framework */; };
+		098A60832D8355C6000456F4 /* Pods_Musicora.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7292C42463DD4A234FFFC1C9 /* Pods_Musicora.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09A983D82E21410100DDD77E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A983BB2E2139B100DDD77E /* WidgetKit.framework */; };
+		09A983D92E21410100DDD77E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A983BD2E2139B100DDD77E /* SwiftUI.framework */; };
+		09A983E62E21410400DDD77E /* MusicoraWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 09A983D72E21410100DDD77E /* MusicoraWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09E187282DB156920091D495 /* music_wave.json in Resources */ = {isa = PBXBuildFile; fileRef = 09E187272DB156920091D495 /* music_wave.json */; };
+		7B3389A1C7C44AED1171C6AC /* Pods_MusicoraWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2D1CCD9B54F32AEE082AEB /* Pods_MusicoraWidgetExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09A983E42E21410400DDD77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09F821312D83550F0066A9F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09A983D62E21410100DDD77E;
+			remoteInfo = MusicoraWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		098A60842D8355C6000456F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				098A60832D8355C6000456F4 /* Pods_Musicora.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A983D22E2139B300DDD77E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09A983E62E21410400DDD77E /* MusicoraWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0970D2532D9EA68D00148C6A /* autumunoc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = autumunoc.mp3; sourceTree = "<group>"; };
+		09A983BB2E2139B100DDD77E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		09A983BD2E2139B100DDD77E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		09A983D72E21410100DDD77E /* MusicoraWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MusicoraWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A984762E23BA1D00DDD77E /* MusicoraWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicoraWidgetExtension.entitlements; sourceTree = "<group>"; };
+		09E187272DB156920091D495 /* music_wave.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = music_wave.json; sourceTree = "<group>"; };
 		09F821392D83550F0066A9F2 /* Musicora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musicora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2D1CCD9B54F32AEE082AEB /* Pods_MusicoraWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicoraWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5F2BED55D5F78873C3D48F /* Pods-MusicoraWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicoraWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MusicoraWidgetExtension/Pods-MusicoraWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		508D55754D73E6567F4ABE89 /* Pods-Musicora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicora.debug.xcconfig"; path = "Target Support Files/Pods-Musicora/Pods-Musicora.debug.xcconfig"; sourceTree = "<group>"; };
+		6A290CAD0B8F92B6C194DF86 /* Pods-Musicora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicora.release.xcconfig"; path = "Target Support Files/Pods-Musicora/Pods-Musicora.release.xcconfig"; sourceTree = "<group>"; };
+		7292C42463DD4A234FFFC1C9 /* Pods_Musicora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musicora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB553F24C85DE874D36AAD51 /* Pods-MusicoraWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicoraWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-MusicoraWidgetExtension/Pods-MusicoraWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		09F8214B2D8355100066A9F2 /* Exceptions for "Musicora" folder in "Musicora" target */ = {
+		096183772E1E8EAA00676549 /* Exceptions for "Musicora" folder in "Musicora" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				View/Untitled.swift,
+			);
+			target = 09F821382D83550F0066A9F2 /* Musicora */;
+		};
+		09A983EA2E21410400DDD77E /* Exceptions for "MusicoraWidget" folder in "MusicoraWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 09F821382D83550F0066A9F2 /* Musicora */;
+			target = 09A983D62E21410100DDD77E /* MusicoraWidgetExtension */;
+		};
+		09A983FB2E22A77800DDD77E /* Exceptions for "Musicora" folder in "MusicoraWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Extension/Extension.swift,
+				Manager/MusicManager.swift,
+				Model/AudioBookModel.swift,
+				Model/SongModel.swift,
+			);
+			target = 09A983D62E21410100DDD77E /* MusicoraWidgetExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		09A983DA2E21410100DDD77E /* MusicoraWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				09A983EA2E21410400DDD77E /* Exceptions for "MusicoraWidget" folder in "MusicoraWidgetExtension" target */,
+			);
+			path = MusicoraWidget;
+			sourceTree = "<group>";
+		};
 		09F8213B2D83550F0066A9F2 /* Musicora */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				09F8214B2D8355100066A9F2 /* Exceptions for "Musicora" folder in "Musicora" target */,
+				096183772E1E8EAA00676549 /* Exceptions for "Musicora" folder in "Musicora" target */,
+				09A983FB2E22A77800DDD77E /* Exceptions for "Musicora" folder in "MusicoraWidgetExtension" target */,
 			);
 			path = Musicora;
 			sourceTree = "<group>";
@@ -32,21 +116,49 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09A983D42E21410100DDD77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A983D92E21410100DDD77E /* SwiftUI.framework in Frameworks */,
+				09A983D82E21410100DDD77E /* WidgetKit.framework in Frameworks */,
+				7B3389A1C7C44AED1171C6AC /* Pods_MusicoraWidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09F821362D83550F0066A9F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098A60822D8355C6000456F4 /* Pods_Musicora.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0300480A0DE8005FB34CE7DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7292C42463DD4A234FFFC1C9 /* Pods_Musicora.framework */,
+				09A983BB2E2139B100DDD77E /* WidgetKit.framework */,
+				09A983BD2E2139B100DDD77E /* SwiftUI.framework */,
+				0A2D1CCD9B54F32AEE082AEB /* Pods_MusicoraWidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09F821302D83550F0066A9F2 = {
 			isa = PBXGroup;
 			children = (
+				09A984762E23BA1D00DDD77E /* MusicoraWidgetExtension.entitlements */,
 				09F8213B2D83550F0066A9F2 /* Musicora */,
+				09A983DA2E21410100DDD77E /* MusicoraWidget */,
 				09F8213A2D83550F0066A9F2 /* Products */,
+				214F1B96965CBE0347937CBD /* Pods */,
+				0300480A0DE8005FB34CE7DD /* Frameworks */,
+				0970D2532D9EA68D00148C6A /* autumunoc.mp3 */,
+				09E187272DB156920091D495 /* music_wave.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,31 +166,68 @@
 			isa = PBXGroup;
 			children = (
 				09F821392D83550F0066A9F2 /* Musicora.app */,
+				09A983D72E21410100DDD77E /* MusicoraWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		214F1B96965CBE0347937CBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				508D55754D73E6567F4ABE89 /* Pods-Musicora.debug.xcconfig */,
+				6A290CAD0B8F92B6C194DF86 /* Pods-Musicora.release.xcconfig */,
+				2E5F2BED55D5F78873C3D48F /* Pods-MusicoraWidgetExtension.debug.xcconfig */,
+				CB553F24C85DE874D36AAD51 /* Pods-MusicoraWidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09F821382D83550F0066A9F2 /* Musicora */ = {
+		09A983D62E21410100DDD77E /* MusicoraWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09F8214C2D8355100066A9F2 /* Build configuration list for PBXNativeTarget "Musicora" */;
+			buildConfigurationList = 09A983E72E21410400DDD77E /* Build configuration list for PBXNativeTarget "MusicoraWidgetExtension" */;
 			buildPhases = (
-				09F821352D83550F0066A9F2 /* Sources */,
-				09F821362D83550F0066A9F2 /* Frameworks */,
-				09F821372D83550F0066A9F2 /* Resources */,
+				038AD24D1367B59785B8333D /* [CP] Check Pods Manifest.lock */,
+				09A983D32E21410100DDD77E /* Sources */,
+				09A983D42E21410100DDD77E /* Frameworks */,
+				09A983D52E21410100DDD77E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				09A983DA2E21410100DDD77E /* MusicoraWidget */,
+			);
+			name = MusicoraWidgetExtension;
+			productName = MusicoraWidgetExtension;
+			productReference = 09A983D72E21410100DDD77E /* MusicoraWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		09F821382D83550F0066A9F2 /* Musicora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F8214C2D8355100066A9F2 /* Build configuration list for PBXNativeTarget "Musicora" */;
+			buildPhases = (
+				5AD88E3EF1EF40B3E5BA265E /* [CP] Check Pods Manifest.lock */,
+				09F821352D83550F0066A9F2 /* Sources */,
+				09F821362D83550F0066A9F2 /* Frameworks */,
+				09F821372D83550F0066A9F2 /* Resources */,
+				EC0457346BA58E570C09054D /* [CP] Embed Pods Frameworks */,
+				098A60842D8355C6000456F4 /* Embed Frameworks */,
+				09F77E242D94252C00C91B01 /* ShellScript */,
+				09A983D22E2139B300DDD77E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09A983E52E21410400DDD77E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
 				09F8213B2D83550F0066A9F2 /* Musicora */,
 			);
 			name = Musicora;
-			packageProductDependencies = (
-			);
 			productName = Musicora;
 			productReference = 09F821392D83550F0066A9F2 /* Musicora.app */;
 			productType = "com.apple.product-type.application";
@@ -90,9 +239,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					09A983D62E21410100DDD77E = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					09F821382D83550F0066A9F2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -104,6 +256,8 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				es,
 			);
 			mainGroup = 09F821302D83550F0066A9F2;
 			minimizedProjectReferenceProxies = 1;
@@ -113,21 +267,124 @@
 			projectRoot = "";
 			targets = (
 				09F821382D83550F0066A9F2 /* Musicora */,
+				09A983D62E21410100DDD77E /* MusicoraWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		09F821372D83550F0066A9F2 /* Resources */ = {
+		09A983D52E21410100DDD77E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09F821372D83550F0066A9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E187282DB156920091D495 /* music_wave.json in Resources */,
+				0970D2542D9EA68D00148C6A /* autumunoc.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		038AD24D1367B59785B8333D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicoraWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09F77E242D94252C00C91B01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nswiftlint\n";
+		};
+		5AD88E3EF1EF40B3E5BA265E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Musicora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0457346BA58E570C09054D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musicora/Pods-Musicora-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musicora/Pods-Musicora-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Musicora/Pods-Musicora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		09A983D32E21410100DDD77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09F821352D83550F0066A9F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,22 +394,97 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		09A983E52E21410400DDD77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09A983D62E21410100DDD77E /* MusicoraWidgetExtension */;
+			targetProxy = 09A983E42E21410400DDD77E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		09F8214D2D8355100066A9F2 /* Debug */ = {
+		09A983E82E21410400DDD77E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5F2BED55D5F78873C3D48F /* Pods-MusicoraWidgetExtension.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MusicoraWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D459R6RZK9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Musicora/Info.plist;
+				INFOPLIST_FILE = MusicoraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MusicoraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boragundogu.Musicora.MusicoraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09A983E92E21410400DDD77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB553F24C85DE874D36AAD51 /* Pods-MusicoraWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MusicoraWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D459R6RZK9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicoraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MusicoraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boragundogu.Musicora.MusicoraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09F8214D2D8355100066A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508D55754D73E6567F4ABE89 /* Pods-Musicora.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_INFOPLIST_LOCALIZATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Musicora/Musicora.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D459R6RZK9;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Musicora/Inf.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Profil fotoğrafı çekmek için kameranıza erişmemiz gerekiyor";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Profil fotoğrafı seçmek için galerinize erişmemiz gerekiyor";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,19 +500,24 @@
 		};
 		09F8214E2D8355100066A9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A290CAD0B8F92B6C194DF86 /* Pods-Musicora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_INFOPLIST_LOCALIZATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Musicora/Musicora.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D459R6RZK9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Musicora/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Musicora/Inf.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Profil fotoğrafı çekmek için kameranıza erişmemiz gerekiyor";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Profil fotoğrafı seçmek için galerinize erişmemiz gerekiyor";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -199,6 +536,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -231,7 +569,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -246,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -262,6 +600,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -294,7 +633,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -303,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -316,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09A983E72E21410400DDD77E /* Build configuration list for PBXNativeTarget "MusicoraWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A983E82E21410400DDD77E /* Debug */,
+				09A983E92E21410400DDD77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		09F821342D83550F0066A9F2 /* Build configuration list for PBXProject "Musicora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
