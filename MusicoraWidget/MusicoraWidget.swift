@@ -21,9 +21,15 @@ struct Provider: TimelineProvider {
         return SongEntry(date: Date(), songs: placeholderSongs, artworkData: [:])
     }
     
-    func getSnapshot(in context: Context, completion: @escaping (SongEntry) -> ()) {
-        let entry = SongEntry(date: Date(), songs: [], artworkData: [:])
-        completion(entry)
+    func getSnapshot(in context: Context, completion: @escaping (SongEntry) -> Void) {
+        let songs = loadSongsFromDefaults()
+        
+        Task {
+            let artworkData = await fetchArtworkData(for: songs)
+            let entry = SongEntry(date: Date(), songs: songs, artworkData: artworkData) // songs'a songs vermek ilk seçim ekranında live data kullanımını sağlıyor,
+            completion(entry)
+        }
+        
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<SongEntry>) -> Void) {
@@ -74,7 +80,7 @@ struct Provider: TimelineProvider {
             let decoder = JSONDecoder()
             return try decoder.decode([Song].self, from: data)
         } catch {
-            print("Widget: veri hatası")
+            print("Widget veri hatası")
             return []
         }
     }
@@ -95,11 +101,11 @@ struct MusicoraWidgetEntryView: View {
     private var songLimit: Int {
         switch family {
         case .systemMedium:
-            return 4
+            return 2
         case .systemLarge:
-            return 8
+            return 6
         default:
-            return 3
+            return 1
         }
     }
     
@@ -119,7 +125,7 @@ struct MusicoraWidgetEntryView: View {
                     .multilineTextAlignment(.center)
                 Spacer()
             } else {
-                ForEach(entry.songs.prefix(songLimit), id: \.trackName) { song in
+                ForEach(entry.songs.prefix(songLimit).reversed(), id: \.trackName) { song in
                     VStack(alignment: .leading) {
                         HStack {
                             if let data = entry.artworkData[song.trackName], let uiImage = UIImage(data: data) {
@@ -149,6 +155,7 @@ struct MusicoraWidgetEntryView: View {
                             }
                         }
                     }
+                    .padding(5)
                 }
                 Spacer()
             }
@@ -158,9 +165,9 @@ struct MusicoraWidgetEntryView: View {
     }
 }
 
-@main
 struct MusicoraWidget: Widget {
     let kind: String = "MusicoraWidget"
+    @Environment(\.widgetFamily) var family
     
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
@@ -168,6 +175,7 @@ struct MusicoraWidget: Widget {
         }
         .configurationDisplayName("Son Çalınanlar")
         .description("En son çaldığınız şarkıları ana ekranınızda görüntüleyin.")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemMedium, .systemLarge])
+
     }
 }
